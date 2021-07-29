@@ -1,9 +1,13 @@
+import Alpine from 'alpinejs'
 import axios from 'axios'
 import { Notyf } from 'notyf'
-import 'alpinejs'
+
+window.Alpine = Alpine
 
 window.notyf = new Notyf()
 window.axios = axios
+
+Alpine.start()
 
 axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest'
 

@@ -52,8 +52,8 @@ class LoginLog extends Model
     static public function createFromRequest(Request $request, ?User $user, LoginResult $result)
     {
         $instance = new self;
-        $instance->email = $request->input('email', $user->email);
-        $instance->user_id = optional($user)->id;
+        $instance->email = $request->input('email', $user?->email);
+        $instance->user_id = $user?->id;
         $instance->ip_address = $request->ip();
         $instance->user_agent = $request->userAgent();
         $instance->result = $result;

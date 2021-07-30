@@ -177,25 +177,25 @@
                         </div>
                     </div>
                 </div>
+            </template>
 
-                <template x-if="payment.amount === '0'">
-                    <div class="flex flex-col mb-4">
-                        <label for="payment-amount" class="mb-2">其他金額 <small class="text-red-400">*</small></label>
+            <template x-if="payment.amount === '0'">
+                <div class="flex flex-col mb-4">
+                    <label for="payment-amount" class="mb-2">其他金額 <small class="text-red-400">*</small></label>
 
-                        <input
-                            id="payment-amount"
-                            class="w-64 px-3 py-2 border border-gray-400 focus:border-blue-700 rounded bg-white"
-                            type="number"
-                            name="payment[amount]"
-                            min="100"
-                            max="10000"
-                            placeholder="請填寫贊助金額"
-                            x-model="payment.custom_amount"
-                            value="500"
-                            required
-                        >
-                    </div>
-                </template>
+                    <input
+                        id="payment-amount"
+                        class="w-64 px-3 py-2 border border-gray-400 focus:border-blue-700 rounded bg-white"
+                        type="number"
+                        name="payment[amount]"
+                        min="100"
+                        max="10000"
+                        placeholder="請填寫贊助金額"
+                        x-model="payment.custom_amount"
+                        value="500"
+                        required
+                    >
+                </div>
             </template>
 
             <div class="flex flex-col mb-4">
@@ -278,20 +278,18 @@
                         class="px-3 py-2 rounded bg-red-600 hover:bg-red-500 text-white"
                     >前往付款</button>
                 </noscript>
-                <template x-if="true">
-                    <template x-if="submitting">
-                        <button
-                            type="submit"
-                            class="px-3 py-2 rounded bg-red-500 text-white"
-                            disabled
-                        >前往付款</button>
-                    </template>
-                    <template x-if="!submitting">
-                        <button
-                            type="submit"
-                            class="px-3 py-2 rounded bg-red-600 hover:bg-red-500 text-white"
-                        >前往付款</button>
-                    </template>
+                <template x-if="submitting">
+                    <button
+                        type="submit"
+                        class="px-3 py-2 rounded bg-red-500 text-white"
+                        disabled
+                    >前往付款</button>
+                </template>
+                <template x-if="!submitting">
+                    <button
+                        type="submit"
+                        class="px-3 py-2 rounded bg-red-600 hover:bg-red-500 text-white"
+                    >前往付款</button>
                 </template>
             </div>
 

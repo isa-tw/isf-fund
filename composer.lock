@@ -8,16 +8,16 @@
     "packages": [
         {
             "name": "aws/aws-sdk-php",
-            "version": "3.186.2",
+            "version": "3.189.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/aws/aws-sdk-php.git",
-                "reference": "ce90f6e5c322f2ce600d818b7949dbfcbf192359"
+                "reference": "f1f9e6cc3f5df8ef53a46d590985ca1b8dabb0f8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/ce90f6e5c322f2ce600d818b7949dbfcbf192359",
-                "reference": "ce90f6e5c322f2ce600d818b7949dbfcbf192359",
+                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/f1f9e6cc3f5df8ef53a46d590985ca1b8dabb0f8",
+                "reference": "f1f9e6cc3f5df8ef53a46d590985ca1b8dabb0f8",
                 "shasum": ""
             },
             "require": {
@@ -92,9 +92,9 @@
             "support": {
                 "forum": "https://forums.aws.amazon.com/forum.jspa?forumID=80",
                 "issues": "https://github.com/aws/aws-sdk-php/issues",
-                "source": "https://github.com/aws/aws-sdk-php/tree/3.186.2"
+                "source": "https://github.com/aws/aws-sdk-php/tree/3.189.0"
             },
-            "time": "2021-07-29T18:14:25+00:00"
+            "time": "2021-08-10T18:17:34+00:00"
         },
         {
             "name": "binota/laravel-hashid-helpers",
